@@ -100,7 +100,6 @@ nav ul li a {
 
 /* Main Contents Design */
 .main__content {
-    border: 2px solid blue;
     background-color: var(--secondary-color);
 }
 
@@ -157,7 +156,7 @@ nav ul li a {
     flex-grow: 1;
 }
 
-.profile__details_2 span {
+.profile__details_2 span p {
     background-color: var(--primary-color);
     border-radius: 50px;
     padding: 0.25em 0.5em;
@@ -173,8 +172,6 @@ nav ul li a {
     margin-right: 0.75em;
 }
 
-
-
 .main__icon {
     width: calc(45px / 1.618);
     height: calc(45px / 1.618);
@@ -182,8 +179,81 @@ nav ul li a {
     margin-right: calc(2 * 0.75rem);
 }
 
-.dashboard__content {
+.dashboard__container {
     display: grid;
-    grid-template-columns: auto 2fr;
+    grid-template-columns: 3fr 1fr;
     padding: 2.5em 1.5em;
+    gap: 2em;
+}
+
+.dashboard__project__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.dashboard__content__title {
+    margin-bottom: 1.5rem;
+}
+
+
+.dashboard__content {
+    /* border: 2px solid pink; */
+}
+
+.engagement__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.react__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.project__card {
+    position: relative;
+    background-color: var(--txt-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.project__card::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--accent-color);
+    position: absolute;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+
+.sidebar__right {
+    
+}
+
+.notification__title {
+    margin-bottom: 1.5rem;
+}
+
+.notifications {
+    background-color: var(--txt-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.notifications:not:nth-child(3) {
+    border-bottom: 1px solid var(--text-color);
+    margin-bottom: 1.5em;
 }
