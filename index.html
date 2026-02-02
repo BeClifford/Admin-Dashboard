@@ -10,19 +10,19 @@
     <!-- Sidebar for navigation -->
      <div class="sidebar">
         <section class="dashboard__title">
-            <svg class="sidebar__icon dashboard__icon"
+            <svg class="dashboard__icon"
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 24 24">
                 <path 
                 d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"/>
             </svg>
-            <h1>Admin Dashboard</h1>
+            <h1>Dashboard</h1>
         </section>
         
         <nav>
             <ul>
                 <!-- First section for the nav links -->
-                <section>
+                <section class="links__wrapper">
                     <li><a href="">
                         <span>
                             <svg class="sidebar__icon home__icon"
@@ -123,7 +123,6 @@
                         </span>
                         <span><h1>Privacy</h1></span>
                     </a></li>
-
                 </section>
             </ul>
         </nav>
@@ -134,39 +133,46 @@
         <header class="main__header">
             <section class="search__profile__pic">
                 <div class="search__bar">
-
+                    <input type="text" placeholder="Search...">
                 </div>
 
                 <div class="profile__pic">
                     <span class="notification">
-                        <svg class="sidebar__icon notification__icon"
+                        <svg class="main__icon notification__icon"
                             xmlns="http://www.w3.org/2000/svg" 
                             viewBox="0 0 24 24"><title>bell-ring-outline</title>
                             <path d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
                         </svg>
                     </span>
                     <span class="profile">
-                        <img 
-                        width="24px"
-                        height="24px"
-                        src="/assets/morgan-profile.jpg" 
-                        alt="profile picture">
+                            <img 
+                            width="24px"
+                            height="24px"
+                            src="/assets/morgan-profile.jpg" 
+                            alt="profile picture">   
                         <h2>Morgan Oakley</h2>
                     </span>
                 </div>
             </section>
 
             <section class="profile__details">
-                <div class="profile__img">
-                    <img 
-                        width="24px"
-                        height="24px"
-                        src="/assets/morgan-profile.jpg" 
-                        alt="profile picture">
+                <div class="profile__details_1">
+                    <div class="profile__img">
+                        <img 
+                            width="24px"
+                            height="24px"
+                            src="/assets/morgan-profile.jpg" 
+                            alt="profile picture">
+                    </div>
+                    <div class="profile__info">
+                        <p>Hi there,</p>
+                        <h1>Morgan Oakley (@morgan)</h1>
+                    </div>
                 </div>
-                <div class="profile__info">
-                    <p>Hi there,</p>
-                    <h1>Morgan Oakley (@morgan)</h1>
+                <div class="profile__details_2">
+                    <span>New</span> 
+                    <span>Upload</span>
+                    <span>Share</span>
                 </div>
             </section>
         </header>
@@ -176,7 +182,7 @@
              <section class="dashboard__content__title">
                 <h2>Projects</h2>
 
-                <div class="contents">
+                <div class="dashboard__project__items">
                     <div class="project__card">
                         <h3>Super cool project</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -379,7 +385,76 @@
              </section>
 
              <aside class="notification__panel">
+                <div class="notification__container">
+                    <h2>Notifications</h2>
+                    <div class="notifications">
+                        <div class="notification__item">
+                            <h3>Site Maintenance</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Iure exercitationem tenetur facilis. Tempora, optio incidunt iste sit reprehenderit, exercitationem provident blanditiis veritatis vel, ex temporibus excepturi! Ex ut voluptates, a totam pariatur iure minus nesciunt temporibus repellat deserunt 
+                            ipsam nulla illo illum labore tempora harum eum modi quaerat aliquam corporis.</p>
+                        </div>
+                        <div class="notification__item">
+                            <h3>Community Share Day</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Iure exercitationem tenetur facilis. Tempora, optio incidunt iste sit reprehenderit, exercitationem provident blanditiis veritatis vel, ex temporibus excepturi! Ex ut voluptates, a totam pariatur iure minus nesciunt temporibus repellat deserunt 
+                            ipsam nulla illo illum labore tempora harum eum modi quaerat aliquam corporis.</p>
+                        </div>
+                        <div class="notification__item">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Iure exercitationem tenetur facilis. Tempora, optio incidunt iste sit reprehenderit, exercitationem provident blanditiis veritatis vel, ex temporibus excepturi! Ex ut voluptates, a totam pariatur iure minus nesciunt temporibus repellat deserunt 
+                            ipsam nulla illo illum labore tempora harum eum modi quaerat aliquam corporis.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="trending__container">
+                    <div class="user__item">
+                        <span class="profile">
+                            <img 
+                                width="24px"
+                                height="24px"
+                                src="/assets/tegan-profile.svg" 
+                                alt="profile picture">
+                            <h3>@tegan</h3>
+                            <p>World Peace Builder</p>
+                        </span>
+                    </div>
+                    <div class="user__item">
+                        <span class="profile">
+                            <img 
+                                width="24px"
+                                height="24px"
+                                src="/assets/morgan-profile.jpg" 
+                                alt="profile picture">
+                            <h3>@morgan</h3>
+                            <p>Super Cool Project</p>
+                        </span>
+                    </div>
+                    <div class="user__item">
+                        <span class="profile">
+                            <img 
+                                width="24px"
+                                height="24px"
+                                src="/assets/Kendall.svg" 
+                                alt="profile picture">
+                            <h3>@kendall</h3>
+                            <p>Life Changing App</p>
+                        </span>
+                    </div>
+                    <div class="user__item">
+                        <span class="profile">
+                            <img 
+                                width="24px"
+                                height="24px"
+                                src="/assets/alex-profile.jpg" 
+                                alt="profile picture">
+                            <h3>@alex</h3>
+                            <p>No Traffic Maker</p>
+                        </span>
+                    </div>
+                </div>
              </aside>
 
         </main>
