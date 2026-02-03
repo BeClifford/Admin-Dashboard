@@ -137,6 +137,10 @@ nav ul li a {
     font-size: 1rem;
 }
 
+.search__bar input:focus {
+    outline: none;
+}
+
 .profile__details {
     display: flex;
     align-items: center;
@@ -161,7 +165,7 @@ nav ul li a {
     border-radius: 50px;
     padding: 0.25em 0.5em;
     color: var(--txt-color);
-    width: 70px;
+    width: 80px;
     text-align: center;
 }
 
@@ -183,7 +187,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 2.5em 1.5em;
-    gap: 2em;
+    gap: 1em;
 }
 
 .dashboard__project__items {
@@ -195,11 +199,6 @@ nav ul li a {
 
 .dashboard__content__title {
     margin-bottom: 1.5rem;
-}
-
-
-.dashboard__content {
-    /* border: 2px solid pink; */
 }
 
 .engagement__icons {
@@ -236,16 +235,13 @@ nav ul li a {
     border-bottom-left-radius: 12px;
 }
 
-
-.sidebar__right {
-    
-}
-
-.notification__title {
+.notification__title,
+.trending__title {
     margin-bottom: 1.5rem;
 }
 
-.notifications {
+.notifications,
+.trending__container {
     background-color: var(--txt-color);
     padding: 1.5rem;
     border-radius: 12px;
@@ -253,7 +249,19 @@ nav ul li a {
     margin-bottom: 1.5rem;
 }
 
-.notifications:not:nth-child(3) {
+.notification__item:nth-child(-n + 2) {
     border-bottom: 1px solid var(--text-color);
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}   
+
+.user__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.profile__text p {
+    font-size: 0.85rem;
 }
